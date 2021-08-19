@@ -3,7 +3,6 @@
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo service nginx start
 sudo touch /var/www/html/index.html
 echo "Holberton School" > /var/www/html/index.html
 REDIRECT="\\\tlocation /redirect_me {\n\t\t return 301 https://www.youtube.com/watch?v=lMJvDi0KNlM;\n\t}\n"
