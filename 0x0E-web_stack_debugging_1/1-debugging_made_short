@@ -2,5 +2,4 @@
 # Nginx must be running, and listening on port 80 of all the server’s
 
 sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-sudo service nginx start
-sudo rm /run/nginx.pid
+sudo service nginx restart
