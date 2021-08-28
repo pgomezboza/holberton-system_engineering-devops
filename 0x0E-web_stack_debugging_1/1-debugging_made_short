@@ -2,4 +2,5 @@
 # Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
 
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-alias c="curl -sI 0:80; service nginx stop"
+alias c="curl -sI 0:80" 
+alias s="service nginx stop"
