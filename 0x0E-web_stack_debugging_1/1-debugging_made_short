@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs
+# Nginx must be running, and listening on port 80 of all the server’s
 
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx start
-alias c="curl -sI 0:80"
+sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+sudo service nginx start
+sudo kill "$(pgrep nginx | head -n1)"
