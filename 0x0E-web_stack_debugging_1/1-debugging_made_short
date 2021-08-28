@@ -3,4 +3,3 @@
 
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 alias c="curl -sI 0:80"
-service nginx stop
