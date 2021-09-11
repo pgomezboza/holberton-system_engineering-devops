@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# script that configures the container to fit the above requirements (short and sweet)
+pkill apache2
+sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+chmod 744 /etc/nginx/nginx.conf
+sudo -u nginx service nginx start
