@@ -7,7 +7,7 @@ If an invalid subreddit is given, the function should return 0.
 
 import requests
 
-url  = "https://www.reddit.com/r/{}/about.json"
+url = "https://www.reddit.com/r/{}/about.json"
 
 
 def number_of_subscribers(subreddit):
