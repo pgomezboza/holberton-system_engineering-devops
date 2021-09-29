@@ -19,7 +19,7 @@ def recurse(subreddit, hot_list=[], after=None):
 
     if response.status_code == 200:
         key = response.json().['data']['after']
-        body = result['data']['children']
+        body = response.json().['data']['children']
         for n in body:
             hot_list.append(n['data']['title'])
         if key is not None:
