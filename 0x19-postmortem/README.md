@@ -27,5 +27,5 @@ Replacing the erroneous line containing the text ".phpp" with ".php" inside the 
 ## Preventive actions:
 Remind the area making the scripts to use the test servers before their release to production, this to check that the change does not affect the operational services. The area in charge of the deployment must follow up the service involved. Before making the requested change, make a backup of the original files.
 
-Good advice:
+## Good advice:
 A post-mortem explains how a problem was resolved. But if you really want to make a major change in a project or organization, you need to know your own and other people's mistakes and successes. A post-mortem is a very powerful tool; it is a great opportunity to learn about yourself and other people. Knowing this will help make the processes involved more efficient. This is the best way to take it.
