@@ -1,8 +1,12 @@
 # About a postmortem.
 
+![Alt text](https://drive.google.com/file/d/1kllSVXXVUiLTPfGqukFonxcm_FjigW3A/view?usp=sharing?raw=true "Title")
+
 ## Summary
 It happened on the night of 01/10/2021. The web server that is responsible for serving a Wordpress portal stopped working from 12:00 am to approximately 12:25 am (UTC-5). After a quick check we noticed that the service returned the following message: "Error 500 - Internal server error". What's going on, we ask ourselves as we look at each other. 
 I receive a couple of phone calls from the area in charge of delivery and help desk, indicating that customers cannot make purchases through the portal. 100% of the users are affected. The root cause is due to one of the Wordpress configuration files not being found by the web service causing it to crash.
+
+![Alt text](https://drive.google.com/file/d/1zwDq-KYkoRD9cSNyRiSN3jvBB6Wp5AWE/view?usp=sharing?raw=true "Title")
 
 ## Timeline:
 - 12:00 am - The problem was reported via a phone call notifying that our website was down.
