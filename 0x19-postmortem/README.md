@@ -1,4 +1,4 @@
-# About an postmortem.
+# About a postmortem.
 
 ## Summary
 It happened on the night of 01/10/2021. The web server that is responsible for serving a Wordpress portal stopped working from 12:00 am to approximately 12:25 am (UTC-5). After a quick check we noticed that the service returned the following message: "Error 500 - Internal server error". What's going on, we ask ourselves as we look at each other. 
