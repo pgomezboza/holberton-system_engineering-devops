@@ -12,6 +12,7 @@ I receive a couple of phone calls from the area in charge of delivery and help d
 - 12:08 am - I log into another terminal, query with the curl command with no response. I do the same for 'www-data'. I get a response in the window where the "strace" command is executed.
 - 12:11 am - I search for the possible bug until I find the problem (an error is shown with the value -1 inside strace). The possible error is shown in a line that references a file with extension ".phpp". The line of code: "require_once( ABSPATH . WPINC . '/class-wp-locale.phpp' ); (No such file or directory))."
 - 12:18 am - I try to locate "class-wp-locale.phpp" and it does not exist, but "class-wp-locale.php" does so I deduce that it is a typo. I check the "wp-settings.php" file to make the necessary adjustment.
+- 12:20 am - I run another curl query, get error 404, apparently the link to the file is broken, check the Puppet script, add a line that restarts the services, run.
 - 12:23 am - In the organization we have a policy to use "Puppet" for deploying changes in production. I prepare a script to modify this file, the statement is: "sed -i 's/.phpp/.php/g". Using Puppet the replacement is made in the file "/var/www/html/wp-settings.php". (the path for the "sed" command must be specified, in this case "/bin").
 - 12:25 am - After making the change, I perform a curl -sI query (127.0.0.1), get a successful response (200). I communicate to the other areas making it known that the incident has been overcome.
 
